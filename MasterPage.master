@@ -1,0 +1,106 @@
+<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+</head>
+<body style="background-color:blueviolet">
+    
+    <form id="form1" runat="server">
+    <center>
+    <div>
+        <table width="800px" border="1">
+            <tr>
+                <td align="center" colspan="2" valign="top">
+                    <img src="quiz-banner.JPG" /></td>
+            </tr>
+            <tr>
+                <td align="center" colspan="2" valign="top" style="width: 795px; background-color: white;">
+                    <asp:Menu ID="Menu1" runat="server" BackColor="Black" BorderStyle="Inset" ForeColor="White"
+                        Height="39px" Orientation="Horizontal" Width="100%" Font-Bold="True" Font-Size="Medium" style="text-align: center">
+                        <StaticMenuItemStyle BorderColor="Transparent" BorderStyle="Inset" />
+                        <Items>
+                            <asp:MenuItem Text="Home" Value="Home" NavigateUrl="~/Home.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Exam " Value="Exam " NavigateUrl="~/Login.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Result" Value="Result" NavigateUrl="~/Result.aspx"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Feedback.aspx" Text="Feed Back" Value="Feed Back"></asp:MenuItem>
+                            <asp:MenuItem Text="Contact_us" Value="Contact_us" NavigateUrl="~/Contect Us.aspx"></asp:MenuItem>
+                        </Items>
+                        <StaticHoverStyle BackColor="White" BorderColor="White" BorderStyle="Outset" BorderWidth="1px"
+                            Font-Bold="True" Font-Size="Medium" ForeColor="Black" />
+                    </asp:Menu>
+                    &nbsp;
+                    <table width="100%" border="1">
+                        <tr>
+                            <td style="width: 100px">
+                                <img src="quiz.jpg" style="width: 220px; height: 204px" /></td>
+                            <td align="center" rowspan="2" valign="top" style="width: 554px">
+                                &nbsp;<br />
+                                &nbsp;
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</asp:contentplaceholder>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 100px">
+                                <br />
+                                <table width="100%">
+                                    <tr>
+                                        <td>
+                                            <asp:Menu ID="Menu2" runat="server" BackColor="#404040" BorderStyle="Inset" ForeColor="White"
+                        Height="120px" Width="99%" Font-Bold="True" Font-Size="Medium" style="text-align: center">
+                                                <StaticMenuItemStyle BorderColor="Transparent" BorderStyle="Inset" />
+                                                <Items>
+                            <asp:MenuItem Text="Question" NavigateUrl="~/Question.aspx" Value="Question"></asp:MenuItem>
+                            <asp:MenuItem Text="Registration" Value="Registration" NavigateUrl="~/Registration.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Guideline" Value="Guideline" NavigateUrl="~/guideline.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Rules for exam" NavigateUrl="~/Rules.aspx" Value="Rules &amp; Regulation"></asp:MenuItem>
+                            <asp:MenuItem Text="Books List" Value="Books List" NavigateUrl="~/Book.aspx"></asp:MenuItem>
+                                                </Items>
+                                                <StaticHoverStyle BackColor="White" BorderColor="White" BorderStyle="Outset" BorderWidth="1px"
+                            Font-Bold="True" Font-Size="Medium" ForeColor="Black" />
+                                            </asp:Menu>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 92px">
+                                <asp:Calendar ID="Calendar1" runat="server" Height="183px" Width="213px" BackColor="White">
+                                    <TodayDayStyle BackColor="Gray" BorderColor="Transparent" BorderStyle="Outset" ForeColor="White" />
+                                    <OtherMonthDayStyle ForeColor="WhiteSmoke" />
+                                </asp:Calendar>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <br />
+                                &nbsp;</td>
+                        </tr>
+                    </table>
+                    &nbsp; Portal &copy Vanisri_Manasa_Exam.com<br />
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    Design By Vanisri_1016_Manasa_1002 &nbsp; &nbsp; &nbsp;&nbsp;</td>
+            </tr>
+        </table>
+        
+    </div>
+    </center>
+    </form>
+</body>
+</html>
